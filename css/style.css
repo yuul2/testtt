@@ -1,0 +1,1150 @@
+@import url(reset.css);
+@import url(wave.css);
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'ONE-Mobile-Regular', sans-serif;
+    color: #181818;
+}
+.main-title{
+    font-family: 'ONE-Mobile-Title', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #181818;
+}
+.clearfix{
+    clear: both;
+}
+.section01{
+    width: 100%;
+}
+header{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    z-index: 12;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.header-wrap{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu{
+    display: flex;
+}
+.main-menu li{
+    display: inline-block;
+    padding: 20px 0 20px 60px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-family: 'ONE-Mobile-Title', sans-serif;
+}
+.main-menu li:hover{
+    transform: scale(1.1);
+}
+.clip-wrap{
+    z-index: 1;
+}
+.clip-circle{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/main01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: ellipse(730px 710px at 70% 20%);
+}
+.clip-circle2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/main02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: ellipse(730px 710px at 70% 20%);  
+}
+.sec01-content-wrap{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+
+.sec01-content-wrap ul{
+    position:relative;
+    height:100%;
+}
+.sec01-content-wrap li{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity:0;
+    animation:fade 6s infinite;
+}
+.sec01-content-wrap li:nth-child(1){
+    animation-delay:0s
+}
+.sec01-content-wrap li:nth-child(2){
+    animation-delay:3s
+}
+@keyframes fade{
+    0% {opacity:0;}
+    25% {opacity:1;}
+    50% {opacity:1;}
+    75% {opacity:0;}
+    100% {opacity:0;}
+}
+.sec01-content{
+    position: relative;
+}
+.sec01-text-content{
+    position: absolute;
+    top: 68%;
+    left: 13%;
+    z-index: 2;
+}
+.sec01-text-content>h1{
+    font-size: 100px;
+}
+.sec01-text-content>h3{
+    font-size: 30px;
+    margin-top: 50px;
+    color: #ccc;
+}
+/* 여기까지 section01 */
+.m-logo img{
+    width: 60px;
+    height: 60px;
+}
+.m-header-wrap{
+    width: 90%;
+    margin: 0 auto;
+}
+.logo-goust{
+    display: flex;
+    justify-content: space-between;
+}
+.goust-btn{
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+.m-main-menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.m-main-menu li{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'ONE-Mobile-Title', sans-serif;
+}
+.m-main-menu a{
+    display: block;
+}
+/* 여기까지 section01 반응형 */
+.section02>h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 0;
+}
+.section02{
+    position: relative;
+    padding-top: 100px;
+}
+.swiper-button{
+    display: flex;
+    position: absolute;
+    top: 450px;
+    left: 234px;
+}
+.button-prev{
+    font-size: 60px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+.button-next{
+    font-size: 60px;
+    cursor: pointer;
+}
+.mySwiper{
+    margin-left: 27%;
+}
+.slide1{
+    width: 100%;
+    height: 300px;
+    background-image: url('../image/5-1-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 200px;
+    position: relative;
+}
+.slide-text{
+    position: absolute;
+    top: 320px;
+    text-align: center;
+    width: 100%;   
+}
+.slide-h3{
+    font-size: 18px;
+    line-height: 35px;
+    font-family: 'ONE-Mobile-title', sans-serif;
+}
+.slide-p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.slide2{
+    width: 100%;
+    height: 300px;
+    background-image: url('../image/sae.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide3{
+    width: 100%;
+    height: 300px;
+    background-image: url('../image/gwang.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide4{
+    width: 100%;
+    height: 300px;
+    background-image: url('../image/seoul.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section02::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #d8f0fd;
+    transform-origin: 45% 45%;
+    animation: cycleM 3s linear infinite alternate both;
+    z-index: -1;
+}
+@keyframes cycleM{
+	0% { transform:translateY(0) scale(1);}
+	100% { transform:translateY(-40px) scale(1.2);}
+}
+
+/* 여기까지 section02 */
+.m-clip-circle {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/main01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: ellipse(530px 520px at 80% 20%);
+}
+.m-clip-circle2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../image/main02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: ellipse(530px 520px at 80% 20%);
+}
+/* .swiper02{
+    position: relative;
+}
+.swiper-button02{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+} */
+/* 여기까지 section02 반응형 */
+.section03{
+    margin-top: 200px;
+    background-color: #d8f0fd;
+    position: relative;
+}
+.section03>h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 0;
+}
+.big-img{
+    width: 75%;
+    margin: 0 auto;
+}
+.big-01{
+    display: flex;
+}
+.big-02{
+    display: none;
+}
+.big-03{
+    display: none;
+}
+.big-04{
+    display: none;
+}
+.big-img01{
+    width: 50%;
+    height: 400px;
+    background-image: url('../image/camping.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big-img02{
+    width: 50%;
+    height: 400px;
+    background-image: url('../image/by.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big-img03{
+    width: 50%;
+    height: 400px;
+    background-image: url('../image/pool.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big-img04{
+    width: 50%;
+    height: 400px;
+    background-image: url('../image/sports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.big-img-text{
+    width: 50%;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.big-img-text>h3{
+    font-size: 30px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'ONE-Mobile-title', sans-serif;
+}
+.big-img-text>p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+.small-img{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.small-img01{
+    width: 23%;
+    height: 200px;
+    background-image: url('../image/camping.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+    cursor: pointer;
+}
+.small-img02{
+    width: 23%;
+    height: 200px;
+    background-image: url('../image/by.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+    cursor: pointer;
+}
+.small-img03{
+    width: 23%;
+    height: 200px;
+    background-image: url('../image/pool.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+    cursor: pointer;
+}
+.small-img04{
+    width: 23%;
+    height: 200px;
+    background-image: url('../image/sports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+    cursor: pointer;
+}
+/* 여기까지 section03 */
+.big-img{
+    width: 75%;
+    margin: 0 auto;
+}
+.m-big-01{
+    display: flex;
+    position: relative;
+}
+.m-big-02{
+    display: none;
+    position: relative;
+}
+.m-big-03{
+    display: none;
+    position: relative;
+}
+.m-big-04{
+    display: none;
+    position: relative;
+}
+.m-big-img01{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../image/camping.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-big-img02{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../image/by.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-big-img03{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../image/pool.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-big-img04{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('../image/sports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m-big-img-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+.m-big-img-text>h3{
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'ONE-Mobile-Title', sans-serif;
+}
+.m-big-img-text>p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+.left-box{
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.right-box{
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.m-small-img{
+    padding-bottom: 50px;
+}
+.m-small-img01{
+    width: 49%;
+    height: 200px;
+    background-image: url('../image/camping.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+}
+.m-small-img02{
+    width: 49%;
+    height: 200px;
+    background-image: url('../image/by.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+}
+.m-small-img03{
+    width: 49%;
+    height: 200px;
+    background-image: url('../image/pool.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+}
+.m-small-img04{
+    width: 49%;
+    height: 200px;
+    background-image: url('../image/sports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 0;
+}
+/* section03 반응형 */
+.section04>h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 200px 0 100px 0;
+}
+.sec04-img-wrap{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+.w-100{
+    width: 20%;
+    z-index: 11;
+    position: relative;
+    cursor: pointer;
+}
+.sec04-text{
+    text-align: center;
+    padding-top: 15px;
+}
+.sec04-text>h3{
+    font-size: 16px;
+    line-height: 40px;
+    font-family: 'ONE-Mobile-title', sans-serif;
+}
+.sec04-text>p{
+    font-size: 14px;
+}
+.scale{
+    transition: all .3s;
+}
+.scale:hover{
+    transform: scale(1.1);
+}
+.img01{
+    width: 100%;
+    height: 400px;
+    background-image: url('../image/img01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img02{
+    width: 100%;
+    height: 400px;
+    background-image: url('../image/img02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img03{
+    width: 100%;
+    height: 400px;
+    background-image: url('../image/img03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img04{
+    width: 100%;
+    height: 400px;
+    background-image: url('../image/img04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.opacity-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    background-color: #000;
+    opacity: 0.7;
+    display: none;
+}
+.opacity-text{
+    margin: 30px 0;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+}
+.opacity-text>p{
+    margin-bottom: 50px;
+}
+/* .opacity-text span{
+    
+} */
+
+/* 여기까지 section04 */
+
+.section05{
+    background-color: #f5f3f3;
+    padding-bottom: 100px;
+}
+.section05>h1{
+    font-size: 40px;
+    text-align: center;
+    padding: 100px 0;
+}
+.adress{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.adress span{
+    font-size: 20px;
+    font-family: 'ONE-Mobile-title', sans-serif;
+    line-height: 40px;
+}
+.adress p{
+    font-size: 15px;
+    line-height: 30px;
+}
+#map{
+    width: 75%;
+    margin: 0 auto;
+    height: 500px;
+}
+.map{
+    padding-bottom: 100px;
+}
+.customoverlay {
+    position:relative;
+    bottom:85px;
+    border-radius:6px;
+    border: 1px solid #ccc;
+    border-bottom:2px solid #ddd;
+    float:left;
+}
+.customoverlay:nth-of-type(n) {
+    border:0; 
+    box-shadow:0px 1px 2px #888;
+}
+.customoverlay a {
+    display:block;
+    text-decoration:none;
+    color:#000;
+    text-align:center;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    background: #d95050;
+    background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;
+}
+.customoverlay .title {
+    display:block;
+    text-align:center;
+    background:#fff;
+    margin-right:35px;
+    padding:10px 15px;
+    font-size:14px;
+    font-weight:bold;
+}
+.customoverlay:after {
+    content:'';
+    position:absolute;
+    margin-left:-12px;
+    left:54%;
+    bottom:-12px;
+    width:22px;
+    height:12px;
+    background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+/* 여기까지 section05 */
+footer{
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+footer>p{
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+}
+footer>img{
+    width: 60px;
+}
+@media(max-width:1190px){
+    .m-tab-gallery{
+        display: block;
+    }
+    .tab-gallery{
+        display: none;
+    }
+}
+@media(min-width:1190px){
+    .m-tab-gallery{
+        display: none;
+    }
+    .tab-gallery{
+        display: block;
+    }
+}
+@media(max-width:1025px){
+    .sec01-text-content {
+        top: 75%;
+    }
+    .swiper01{
+        display: none;
+    }
+    .swiper02{
+        display: block;
+        position: relative;
+    }
+    .section02::before {
+        top: 15%;
+        left: 25%;
+        width: 100px;
+        height: 100px;
+    }
+    @keyframes cycleM{
+        0%, 100% { transform:translateY(0) scale(1);}
+        50% { transform:translateY(-10px) scale(1.1);}
+    }
+    .clip-circle {
+        clip-path: ellipse(700px 710px at 70% 20%);
+    }
+    .clip-circle2 {
+        clip-path: ellipse(700px 710px at 70% 20%);
+    }
+    .button-prev{
+        position: absolute;
+        margin-right: 0;
+        left: 40%;
+        z-index: 3;
+    }
+    .button-next{
+        position: absolute;
+        right: 40%;
+        z-index: 3;
+    }
+    .swiper-container {
+        padding-top: 160px;
+        z-index: 1;
+    }
+    .slide1, .slide2, .slide3, .slide4 {
+        height: 400px;
+    }
+    .slide-text {
+        padding-top: 120px;
+    }
+    .section03>h1 {
+        padding: 200px 0 100px 0;
+    }
+    .sec04-img-wrap {
+        flex-wrap: wrap;
+        padding-bottom: 250px;
+    }
+    .w-100 {
+        width: 45%;
+    }
+    .img01, .img02, .img03, .img04 {
+        height: 400px;
+    }
+    .sec04-text {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+    .opacity-img {
+        height: 400px;
+    }
+    .opacity-text{
+        font-size: 14px;
+        margin: 50px 0;
+    }
+    .opacity-text>p {
+        margin-bottom: 0;
+    }
+    .w-100:hover{
+        transform: none;
+    }
+    .sec01-text-content>h1 {
+        font-size: 80px;
+    }
+    .sec01-text-content>h3 {
+        text-align: left;
+    }
+    #map{
+        height: 700px;
+    }
+    .section05{
+        padding: 100px 0 200px 0;
+    }
+}
+@media(min-width:1025px){
+    .swiper01{
+        display: block;
+    }
+    .swiper02{
+        display: none;
+    }
+}
+@media(max-width:797px){
+    .sec01-text-content>h1 {
+        font-size: 60px;
+    }
+    .sec01-text-content>h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+    .pc-header{
+        display: none;
+    }
+    header{
+        background-color: white;
+    }
+    .m-menu{
+        display: none;
+    }
+    .sec01-text-content {
+        top: 75%;
+    }
+    .clip-wrap{
+        display: none;
+    }
+    .m-clip-wrap{
+        display: block;
+    }
+    .slide-p br{
+        display: none;
+    }
+    .slide-p {
+        padding: 0 15px;
+    }
+    .section02>h1 {
+        padding: 40px 0;
+    }
+    .section02::before {
+        top: 12%;
+        left: 20%;
+    }
+    .swiper-button02 {
+        top: 0;
+        left: none;
+    }
+    .button-prev, .button-next{
+        top: 5%;
+        font-size: 40px;
+    }
+    .slide1, .slide2, .slide3, .slide4 {
+        height: 300px;
+    }
+    .swiper-container {
+        padding: 150px 20px;
+    }
+    .slide-text {
+        padding-top: 0;
+    }
+    .slide-h3 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .section03>h1 {
+        padding: 100px 0 80px 0;
+    }
+    .m-big-img01, .m-big-img02, .m-big-img03, .m-big-img04{
+        height: 300px;
+    }
+    .m-big-img-text>h3 {
+        padding-top: 30px;
+    }
+    .section04>h1 {
+        padding: 100px 0;
+    }
+    .img01, .img02, .img03, .img04 {
+        height: 300px;
+    }
+    .opacity-img {
+        height: 300px;
+    }
+    .opacity-text{
+        margin: 0;
+        padding-top: 10px;
+    }
+    .section05{
+        padding: 0 0 100px 0;
+    }
+    .section05>h1 {
+        padding: 150px 0 100px 0;
+    }
+    #map{
+        height: 500px;
+    }
+}
+@media(min-width:797px){
+    .m-header{
+        display: none;
+    }
+    .clip-wrap{
+        display: block;
+    }
+    .m-clip-wrap{
+        display: none;
+    } 
+}
+@media(max-width:415px){
+    .sec01-text-content {
+        top: 65%;
+    }
+    .sec01-text-content>h3 {
+        margin-top: 0;
+    }
+    .m-big-img-text>h3{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    .m-big-img-text>p{
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+    .m-big-img-text>p br {
+        display: none;
+    }
+    .big-img{
+        width: 100%;
+    }
+    .left-box{
+        width: 90%;
+    }
+    .right-box{
+        width: 90%;
+    }
+    .m-logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .goust-btn {
+        font-size: 20px;
+        padding: 7px;
+    }
+    /* .m-menu{
+        padding-bottom: 0;
+    } */
+    /* .m-main-menu{
+        height: 100vh;
+        padding-top: 200px;
+    }
+    .m-main-menu li {
+        line-height: 50px;
+        font-size: 15px;
+    } */
+    .m-clip-circle, .m-clip-circle2{
+        clip-path: ellipse(280px 280px at 80% 25%)
+    }
+    .sec01-text-content>h1 {
+        font-size: 30px;
+        line-height: 120px;
+    }
+    .sec01-text-content>p {
+        font-size: 18px;
+        line-height: 0;
+    }
+    .sec01-text-content>h3 {
+        font-size: 18px;
+    }
+    .section02{
+        padding-top: 0;
+    }
+    .section02>h1{
+        padding: 80px 0 0 0;
+        font-size: 26px;
+    }
+    .swiper-container {
+        padding: 100px 20px;
+    }
+    .swiper-button02 {
+        top: 7%;
+        left: none;
+    }
+    .button-prev {
+        font-size: 25px;
+    }
+    .button-next {
+        font-size: 25px;
+    }
+    .slide-text {
+        padding-top: 20px;
+    }
+    .slide-h3{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .slide-p{
+        font-size: 14px;
+        padding: 0;
+    }
+    .slide1-text, .slide2-text, .slide3-text, .slide4-text{
+        top: 310px;
+    }
+    .section02::before{
+        display: none;
+    }
+    .wave2 {
+        z-index: -1;
+    }
+    .section03{
+        margin-top: 0;
+    }
+    .section03>h1{
+        padding: 100px 0 50px 0;
+        font-size: 26px;
+    }
+    .m-big-img01, .m-big-img02, .m-big-img03, .m-big-img04 {
+        height: 250px;
+        width: 90%;
+    }
+    .m-small-img01, .m-small-img02, .m-small-img03, .m-small-img04 {
+        height: 130px;
+    }
+    .m-small-img {
+        padding-bottom: 40px;
+    }
+    .section04{
+        margin-top: 50px;
+    }
+    .section04>h1{
+        padding: 120px 0 70px 0;
+        font-size: 26px;
+    }
+    /* .sec04-img-wrap {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-bottom: 150px;
+    } */
+    .sec04-img-wrap{
+        width: 90%;
+    }
+    /* .w-100 {
+        width: 100%;
+    } */
+    .w-100{
+        width: 48%;
+    }
+    .img01, .img02, .img03, .img04 {
+        height: 200px;
+    }
+    .opacity-img {
+        height: 200px;
+    }
+    .opacity-text {
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+    .opacity-p{
+        display: none;
+    }
+    .sec04-text>h3 {
+        font-size: 15px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .sec04-text {
+        padding-bottom: 0;
+    }
+    .sec04-text>p {
+        display: none;
+    }
+    .section05{
+        padding: 0 0 100px 0;
+    }
+    .section05>h1 {
+        font-size: 26px;
+        padding: 100px 0;
+    }
+    #map{
+        height: 350px;
+    }
+    .adress span {
+        font-size: 18px;
+    }
+    .adress p {
+        font-size: 14px;
+    }
+    .scale:hover{
+        transform: none;
+    }
+    footer>p{
+        font-size: 12px;
+    }
+}
